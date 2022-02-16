@@ -61,3 +61,40 @@ let user = null;
 
 //객체형
 //심볼형
+
+- - - - -
+
+// typeof 연산자
+
+const name = "Mike";
+
+console.log(typeof 3);
+console.log(typeof name);
+console.log(typeof ture);
+console.log(typeof "xxx");
+console.log(typeof null);
+console.log(typeof underfined);
+
+
+- - - - -
+  
+Tip 
+
+const name = "Mike";
+const message = `My name is ${name}`;
+
+const message2 = "My name is ${name}";
+console.log(message2)
+
+
+- - - - -
+
+const name = "Mike";
+
+const a = "나는 ";
+const b = " 입니다.";
+
+console.log(a+ name + b);
+
+const age = 30; //number
+console.log(a+ age + "살" + b);
