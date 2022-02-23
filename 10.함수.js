@@ -52,3 +52,57 @@ function sayHello(name){
 sayHello('Mike');
 console.log('함수 호출 후')
 console.log(msg)
+
+- - - - -
+
+  // 전역 변수와 지역 변수
+
+let msg = "welcome";
+console.log(msg)
+
+function sayHello(name){
+  let msg = "Hello"
+  console.log(msg + ' ' + name);
+}
+
+sayHello('Mike');
+console.log(msg)
+
+- - -
+  
+let msg = "Mike";
+
+function sayHello(name){
+  console.log(name)
+}
+
+sayHello();
+sayHello('Jane')
+
+- - -
+  
+// OR
+
+
+function sayHello(name){
+  let newName = name || 'friend';
+  let msg = `Hello, ${newName}`
+  console.log(msg)
+}
+
+sayHello();
+sayHello('Jane');
+
+
+- - - 
+  
+// default
+
+
+function sayHello(name = 'friend'){
+  let msg = `Hello, ${name}`
+  console.log(msg)
+}
+
+sayHello();
+sayHello('Jane');
