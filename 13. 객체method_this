@@ -53,3 +53,5 @@ boy = null;
 man.showName();
 
 // console.log(this.name)로 변경
+
+// showName : () => { 화살표 함수 변경시 윈도우가 뜨므로 안하는게 좋다.
