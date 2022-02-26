@@ -1,0 +1,55 @@
+const superman = {
+  name : 'clark',
+  age : 33,
+  fly : function(){
+    console.log("날아갑니다.")
+  }
+}
+
+superman.fly();
+
+- - - - -
+
+const user ={
+  name : 'Mike',
+  sayHello : function(){
+    console.log(`Hello,I'm ${this.name}`);
+  }
+}
+
+user.sayHello();
+
+
+- - - - -
+
+ //method
+
+let boy = {
+  name : "Mike",
+  showName : function () {
+    console.log(boy.name)
+  }
+};
+
+boy.showName();
+
+- - -
+
+let man = boy;
+man.name = "Tom"
+
+console.log(boy.name)
+
+- - -
+
+let man = boy;
+man.showName();
+
+- - -
+
+let man = boy;
+boy = null;
+
+man.showName();
+
+// console.log(this.name)로 변경
