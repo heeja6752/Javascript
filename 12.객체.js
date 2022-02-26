@@ -57,3 +57,41 @@ console.log(Mike);
 
 console.log("age" in Mike);
 console.log("birthday" in Mike);
+
+
+- - - - -
+  
+
+//객체 in
+
+function isAdult(user){
+  if(!('age' in user) ||
+    user.age < 20) {
+    return false;
+  }
+  return true;
+}
+
+const Mike = {
+  name: "Mike",
+  age: 30
+};
+
+const Jane = {
+  name: "Jane"
+};
+
+console.log(isAdult(Jane))
+
+- - -
+  
+// 객체 for ... in
+
+const Mike = {
+  name: "Mike",
+  age : 30
+};
+
+for (x in Mike){
+  console.log(Mike[x]) //Mike['age']
+}
