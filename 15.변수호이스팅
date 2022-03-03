@@ -1,0 +1,69 @@
+var name = 'Mike';
+console.log(name);
+
+var name = 'Jane';
+console.log(name);
+
+- - -
+
+let name = 'Mike'
+console.log(name);
+
+let name = 'Jane'
+console.log(name);
+
+=>Error
+- - - - -
+
+Temperal Dead Zone
+
+let age = 30;
+function showAge(){
+  console.log(age);
+  let age = 20; X
+}
+showAge();
+
+
+- - - - -
+
+const
+
+let nema;
+name = 'Mike';
+
+var age;
+age= 30;
+
+const gender;  //Error 선언하면서 바로 할당을 안했다.
+gender = 'male'
+
+
+- - - - -
+
+function add(){ //Block - level Scope
+}
+
+if() { //Block - level Scope
+}
+
+for(let i=0; i<10; i++) { //Block - level Scope
+}
+
+- - - - -
+
+const age = 30;
+
+if(age>19){
+  var txt = '성인'; //사용가능
+}
+
+console.log(txt);
+
+- - -
+
+function add(num1,num2){
+  var result = num1 + num2;  //var가 함수내에서 선언되면 사용할수없다.
+}
+add(2,3);
+console.log(result);
